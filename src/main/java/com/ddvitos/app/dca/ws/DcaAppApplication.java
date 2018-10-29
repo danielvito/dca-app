@@ -23,4 +23,9 @@ public class DcaAppApplication extends SpringBootServletInitializer {
 		return new SpringApplicationContext();
 	}
 
+	@Bean(name = "AppProperties")
+	public AppProperties getAppProperties() {
+		return new AppProperties();
+	}
+
 }

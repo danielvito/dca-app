@@ -23,7 +23,7 @@ import com.ddvitos.app.dca.ws.shared.dto.BankSlipDTO;
 import com.ddvitos.app.dca.ws.ui.model.response.ErrorMessages;
 
 @Service
-public class BankSlipImpl implements BankSlipService {
+public class BankSlipServiceImpl implements BankSlipService {
 
 	@Autowired
 	BankSlipRepository bankSlipRepository;

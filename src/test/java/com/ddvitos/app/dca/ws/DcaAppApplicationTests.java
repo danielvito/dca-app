@@ -1,4 +1,4 @@
-package com.ddvitos.app.dca;
+package com.ddvitos.app.dca.ws;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
