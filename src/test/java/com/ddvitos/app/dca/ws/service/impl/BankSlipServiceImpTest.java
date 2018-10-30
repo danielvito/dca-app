@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -35,6 +36,7 @@ class BankSlipServiceImpTest {
 	}
 
 	@Test
+	@DisplayName("Service Get BankSlip Unit Test")
 	void testGetBankSlip() {
 		BankSlipEntity bankSlipEntity = new BankSlipEntity();
 		bankSlipEntity.setBankslipId("1234");
@@ -52,6 +54,7 @@ class BankSlipServiceImpTest {
 	}
 
 	@Test
+	@DisplayName("Service Get BankSlip BankSlipNotFoundException Unit Test")
 	void testGetBankSlip_BankSlipNotFoundException() {
 		when(bankSlipRepository.findBybankslipId(anyString())).thenReturn(null);
 		assertThrows(BankSlipNotFoundException.class, () -> {
