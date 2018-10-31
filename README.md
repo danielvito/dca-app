@@ -19,6 +19,18 @@ This project uses the following frameworks in order to optimize the application 
 ```sh
 git clone https://github.com/danielvito/dca-app.git
 cd dca-app.git
+
+# Install dependencies
+mvn install
+
+# Run S
+mvn spring-boot:run
+
+# Run Unit Tests
+mvn test
+
+# Run Integrated Tests
+mvn verify
 ```
 
 ## License
