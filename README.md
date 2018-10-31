@@ -23,13 +23,16 @@ cd dca-app.git
 # Install dependencies
 mvn install
 
-# Run S
+# Run Application
+# It will start the server on localhost:8000/rest
+# There are sample requets to import and run using Postman (see postman_samples.json)
+# Open http://localhost:8000/rest/h2-console (user: root, pass: root) to use H2 console
 mvn spring-boot:run
 
-# Run Unit Tests
+# Run Unit Tests (**/*Test.java classes)
 mvn test
 
-# Run Integrated Tests
+# Run Integrated Tests (**/*IT.java classes)
 mvn verify
 ```
 
