@@ -1,6 +1,6 @@
-# Conta Azul Challenge
+# Spring Boot Rest API
 
-Source code to run the Conta Azul Challenge.
+Source code to run the Spring Boot Rest API.
 
 ## Project
 
